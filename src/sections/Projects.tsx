@@ -1,4 +1,6 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
+import ShedSoftware from "@/assets/images/Software_for_Shed.png";
+import NotesApp from "@/assets/images/notes-app.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
@@ -8,28 +10,28 @@ import grainImage from "@/assets/images/grain.jpg";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Sisaaraa Group",
+    year: "2024",
+    title: "Management System Software for Filling Stations",
     results: [
+      { title: "Built the full system" },
       { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Improved system speed by 50%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://lnkd.in/gXMsGtjM",
+    image: ShedSoftware,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Portfolio",
+    year: "2025",
+    title: "Notes App",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://www.linkedin.com/in/sisila-dhevasiri/details/projects/2063050131/multiple-media-viewer/?profileId=ACoAAEeNc_4BXNdbZogqr3bwxLx3Ex8LGh8Olr0&treasuryMediaId=1741524806187",
+    image: NotesApp,
   },
   {
     company: "Quantum Dynamics",
