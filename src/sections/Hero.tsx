@@ -1,4 +1,5 @@
 import memojiImage from "@/assets/images/memoji_sisila_no_bg.png";
+import SisilaImage from "@/assets/images/CEO-removebg.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
@@ -53,7 +54,7 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center">
           <Image
             src={memojiImage}
-            className="size-[100px]"
+            className="size-[120px]"
             alt="Memoji of sisila behind laptop"
           />
           <div className="bg-gray-950 border border-gray-900 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
