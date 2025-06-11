@@ -142,9 +142,9 @@ export const HeroSection = () => {
             Building Exceptional User Experiences
           </h1>
           <p className="mt-4 text-center text-white/60">
-            I am a passionate full-stack developer with a focus on creating
-            intuitive and engaging user interfaces. Let`s collaborate to bring
-            your ideas to life!
+            I am a passionate Software Engineer with a focus on creating
+            engaging user interfaces for real world problems. Let`s collaborate
+            to bring your ideas to life!
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
