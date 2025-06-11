@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  trailingSlash: true,
+  // Use "out" instead of "docs" for GitHub Pages
+  outDir: "./out",
+  // Add basePath if you're deploying to a subfolder on GitHub Pages
+  // basePath: '/my_portfolio_website',
   images: {
     unoptimized: true,
   },
