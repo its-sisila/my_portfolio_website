@@ -1,7 +1,7 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import ShedSoftware from "@/assets/images/Software_for_Shed.png";
 import NotesApp from "@/assets/images/notes-app.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
+import monteCarloSimulation from "@/assets/images/monte_carlo_sim.jpeg";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -35,16 +35,16 @@ const portfolioProjects = [
     image: NotesApp,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "University of Plymouth",
+    year: "2024",
+    title: "Monte Carlo Simulation",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://github.com/CTS-Python-simulation-program/Simulations",
+    image: monteCarloSimulation,
   },
 ];
 

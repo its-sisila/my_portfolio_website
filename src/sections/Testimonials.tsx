@@ -1,44 +1,50 @@
-import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
-import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
-import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import IEEESBNSBM from "@/assets/images/ieeesbnsbm_logo.jpeg";
+import IEEESBIIT from "@/assets/images/ieee_computer_society_student_chapter_of_iit_logo.jpeg";
+import IEEESLIIT from "@/assets/images/ieee_student_branch_of_sliit_logo.jpeg";
+import AIDSL from "@/assets/images/ai_driven_sri_lanka_logo.jpeg";
+import plymoutLogo from "@/assets/images/plymouth_university_logo.jpeg";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
 import { Card } from "@/components/Card";
 import { Fragment } from "react";
+import { text } from "stream/consumers";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-    avatar: memojiAvatar1,
+    name: "IEEE Student Branch",
+    position: "SLIIT University",
+    text: "2025/2026 - Ambassador for Path to Internship",
+    text2: "Skills - Event Promotion, Community Engagement, Communication",
+    avatar: IEEESLIIT,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-    avatar: memojiAvatar2,
+    name: "IEEE Computer Society Student Branch Chapter",
+    position: "IIT University",
+    text: "2025/2026 - Ambassador for CodeRally 6.0",
+    text2: "Skills - Event Promotion, Community Engagement, Communication",
+    avatar: IEEESBIIT,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
-    avatar: memojiAvatar3,
+    name: "AI Driven Sri Lanka",
+    position: "IEEE YP Sri Lanka",
+    text: "2025/2026 - Industry Outreach Coordinator",
+    text2: "Skills - Networking, Industry Collaboration, Communication",
+    avatar: AIDSL,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
+    name: "IEEE Student Branch",
+    position: "NSBM Green University",
+    text: "2025/2026 - Media Coordinator",
+    text2: "Skills - Event Promotion, Social Media Management, Communication",
+    avatar: IEEESBNSBM,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
+    name: "Plymouth University",
+    position: "Affiliated with NSBM Green University",
+    text: "2024/2026 Representative of Batch 12 (Computer Science)",
+    text2: "Skills - Leadership, Communication, Teamwork, Problem Solving",
+    avatar: plymoutLogo,
   },
 ];
 
@@ -47,12 +53,12 @@ export const TestimonialsSection = () => {
     <div className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="Happy Clients"
-          title="What Clients Say about Me"
-          description="Don`t just take my word for it. Here`s what some of my clients have to say about my work."
+          eyebrow="Extracurricular Activities"
+          title="Volunteering and Leadership"
+          description="Following experiences showcase my leadership, teamwork, and communication skills, which are essential for success in any professional environment."
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
-          <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
+          <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:30s] hover:[animation-play-state:paused]">
             {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
                 {testimonials.map((testimonial) => (
@@ -77,6 +83,8 @@ export const TestimonialsSection = () => {
                     </div>
                     <p className="mt-4 md:mt-6 text-sm md:text-base">
                       {testimonial.text}
+                      <br />
+                      {testimonial.text2}
                     </p>
                   </Card>
                 ))}

@@ -1,5 +1,6 @@
+"use client";
 import memojiImage from "@/assets/images/memoji_sisila_no_bg.png";
-import SisilaImage from "@/assets/images/CEO-removebg.png";
+import SisilaImage from "@/assets/images/CEO-modified.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
@@ -8,6 +9,13 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
+  const handleExploreWork = () => {
+    const element = document.getElementById("projects");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -116,7 +124,7 @@ export const HeroSection = () => {
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
-            src={memojiImage}
+            src={SisilaImage}
             className="size-[120px]"
             alt="Memoji of sisila behind laptop"
           />
@@ -140,14 +148,22 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl ">
+          <button
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:bg-white/5 transition-colors cursor-pointer relative z-10"
+            onClick={handleExploreWork}
+          >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <a
+            href="https://www.linkedin.com/in/sisila-dhevasiri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-gray-100 transition-colors cursor-pointer relative z-10"
+          >
             <span>👋</span>
             <span>Let`s Connect</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
