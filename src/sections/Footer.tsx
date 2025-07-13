@@ -1,9 +1,14 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import { title } from "process";
 
 const footerLinks = [
   {
     title: "LinkedIn",
     href: "https://www.linkedin.com/in/sisila-dhevasiri",
+  },
+  {
+    title: "GitHub",
+    href: "https://github.com/its-sisila",
   },
 ];
 
