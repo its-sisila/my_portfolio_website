@@ -2,7 +2,7 @@ import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import ShedSoftware from "@/assets/images/Software_for_Shed.png";
 import NotesApp from "@/assets/images/notes-app.png";
 import monteCarloSimulation from "@/assets/images/monte_carlo_sim.jpeg";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import SAMI from "@/assets/images/sami.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -11,6 +11,18 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
+    company: "Commissioned",
+    year: "2026",
+    title: "SAMI - Shed AI Manager Interface",
+    results: [
+      { title: "Accurate Market Predictions" },
+      { title: "Improved data entry speed by 70%" },
+      { title: "Agentic AI gives actionable insights" },
+    ],
+    link: "https://www.getsami.app",
+    image: SAMI,
+  },
+    {
     company: "Sisaaraa Group",
     year: "2024",
     title: "Management System Software for Filling Stations",
