@@ -16,7 +16,7 @@ const portfolioProjects = [
     title: "SAMI - Shed AI Manager Interface",
     results: [
       { title: "Accurate Market Predictions" },
-      { title: "Improved data entry speed by 70%" },
+      { title: "Improved data entry speed by 8x" },
       { title: "Agentic AI gives actionable insights" },
     ],
     link: "https://www.getsami.app",
